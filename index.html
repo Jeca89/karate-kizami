@@ -1428,6 +1428,28 @@ body {
         margin-left: 0 !important;
     }
 }
+        /* RESPONSIVE TABELA */
+@media (max-width: 768px) {
+    .schedule {
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 -15px;
+        padding: 0 15px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .schedule-table {
+        min-width: 700px;
+        width: auto;
+        margin: 0;
+    }
+    
+    /* Osiguraj da tabela ne pomera celu stranu */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
     </style>
 </head>
 <body>
