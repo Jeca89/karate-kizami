@@ -902,7 +902,276 @@ section {
     }
 }
 
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+    /* Header i navigacija */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav-links li {
+        margin: 0 8px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    /* Hero sekcija */
+    .hero {
+        height: 70vh;
+        padding: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 5px 0;
+    }
+    
+    /* O nama sekcija */
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .about-image {
+        height: 300px;
+    }
+    
+    /* Raspored treninga */
+    .schedule-table {
+        font-size: 0.9rem;
+    }
+    
+    .schedule-table th,
+    .schedule-table td {
+        padding: 10px 8px;
+    }
+    
+    /* Treneri */
+    .trainers-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .trainer-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .trainer-info {
+        padding: 20px;
+    }
+    
+    .trainer-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* Cene */
+    .pricing-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .pricing-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Kontakt forma */
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-form {
+        order: -1; /* Forma iznad kontakata na mobilnim */
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; /* Sprečava zoom na iOS */
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Sekcije generalno */
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Mapa */
+    .map-container iframe {
+        height: 250px;
+    }
+}
 
+/* EXTRA SMALL DEVICES (phones, 480px and down) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .trainer-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .schedule-table {
+        font-size: 0.8rem;
+    }
+    
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 5px;
+    }
+    
+    /* Poboljšanje za table na malim ekranima */
+    .schedule-table-container {
+        overflow-x: auto;
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+    
+    .schedule-table {
+        min-width: 500px; /* Omogućava horizontalno scrollovanje */
+    }
+    
+    /* Poboljšanje dugmadi */
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    /* Footer text */
+    .copyright,
+    .created-by {
+        font-size: 0.9rem;
+    }
+}
+
+/* TABLET DEVICES (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .trainer-card {
+        width: 300px;
+    }
+    
+    .pricing-card {
+        width: 280px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* FIX ZA ORIENTATION CHANGE */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        min-height: 500px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* POBOLJŠANJE TAP TARGETS ZA MOBILNE */
+@media (max-width: 768px) {
+    .nav-links a,
+    .btn,
+    .read-more-btn {
+        min-height: 44px; /* Apple preporuka za tap targets */
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        padding: 10px 15px;
+    }
+}
+
+/* SPRECA ZOOM NA INPUT FIELDS */
+@media (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
 
 
 
