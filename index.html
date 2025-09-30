@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d32f2f">
+    
     <title>Karate Klub Kizami</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -1172,8 +1174,25 @@ section {
         font-size: 16px !important;
     }
 }
+        /* FIX ZA BELI PROSTOR NA MOBILNOM */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Sprečava horizontalni scroll */
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 
+/* Osiguraj da svi kontejneri imaju box-sizing */
+* {
+    box-sizing: border-box;
+}
 
         
     </style>
