@@ -1411,7 +1411,23 @@ body {
         padding: 0 15px;
     }
 }
-        
+        /* FIX ZA TABELU - CENTRIRAJ I PRIKAŽI CELU */
+@media (max-width: 768px) {
+    .schedule {
+        overflow-x: auto !important;
+        width: 100vw !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .schedule-table {
+        min-width: 750px !important;
+        margin-left: 0 !important;
+    }
+}
     </style>
 </head>
 <body>
