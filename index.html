@@ -15,24 +15,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
-.container {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 15px !important;
-    margin: 0 auto !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-}
-        
         :root {
             --primary: #d32f2f;
             --primary-dark: #b71c1c;
@@ -1445,6 +1428,32 @@ html, body {
 * {
     box-sizing: border-box;
     max-width: 100%;
+}
+
+        /* FIX ZA SVE EKRANE */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* MOBILNI FIX */
+@media (max-width: 768px) {
+    .schedule {
+        overflow-x: auto;
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+    
+    .schedule-table {
+        min-width: 700px;
+    }
 }
         /* RESPONSIVE TABELA */
 @media (max-width: 768px) {
