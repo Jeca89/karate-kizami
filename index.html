@@ -1474,6 +1474,27 @@ body {
     display: block;
   }
 }
+        /* FINAL FIX ZA HERO NA MOBILNOM */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh !important;
+        min-height: 500px !important;
+        padding-top: 7rem !important;
+        padding-bottom: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .background-video {
+        object-fit: cover !important;
+        object-position: center center !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
         
         
 
