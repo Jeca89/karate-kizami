@@ -166,7 +166,7 @@
    
         .hero {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -176,25 +176,24 @@
     color: white;
     overflow: hidden;
     padding: 2rem 1rem;
+    padding-top: 5rem;
     box-sizing: border-box;
 }
 
-.video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    overflow: hidden;
+.video-container video,
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    max-width: none;
 }
-
 
 /* Mobilni uređaji */
 @media (max-width: 768px) {
     .hero {
-        height: 80vh;         /* Manja visina */
-        padding-top: 6rem;    /* Dovoljno prostora za navigaciju */
+        height: 100vh;         /* Manja visina */
+        padding-top: 7rem;    /* Dovoljno prostora za navigaciju */
     }
 
     .video-container {
