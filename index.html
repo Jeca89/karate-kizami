@@ -187,11 +187,15 @@
 
         @media (max-width: 768px) {
     .video-container {
-        position: relative; 
-        height: auto;       
+        position: absolute; /* ostaje absolute */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh; /* manja visina ali video i dalje pokriva deo */
         max-width: 100%;
     }
 }
+
         
 .background-video {
     width: 100%;
