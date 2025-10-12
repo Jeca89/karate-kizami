@@ -213,7 +213,14 @@
         overflow: hidden;
     }
 }
-
+.background-video {
+  width: 100vw !important;  /* koristi celu širinu ekrana */
+  height: 100vh;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
 
         .video-overlay {
     position: absolute;
