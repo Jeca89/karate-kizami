@@ -185,6 +185,14 @@
     max-width: 100%;
 }
 
+        @media (max-width: 768px) {
+    .video-container {
+        position: relative; 
+        height: auto;       
+        max-width: 100%;
+    }
+}
+        
 .background-video {
     width: 100%;
     height: 100%;
@@ -194,8 +202,9 @@
 
         @media (max-width: 768px) {
             .video-container {
-                width: 100vw;
-                max-width:100vw
+                width: 100%;
+                max-width:100%
+                box-sizing: border-box;
             }
         }
 
@@ -313,6 +322,14 @@
         font-size: 2rem;
     }
 }
+        @media (max-width: 768px) {
+    .hero-content, .hero-buttons {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+        
 
         
         
@@ -544,6 +561,15 @@
     
     .trainer-info p {
         font-size: 0.95rem;
+    }
+}
+        @media (max-width: 768px) {
+    .trainers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 }
 
