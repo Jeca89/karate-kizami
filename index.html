@@ -193,10 +193,12 @@
     object-fit: cover;
     object-position: center;
 }
+       
+
         @media (max-width: 768px) {
     .hero {
-        height: 80vh; /* niža visina da ne prekrije navigaciju */
-        padding-top: 6rem; /* pomeri sadržaj ispod fiksne navigacije */
+        height: 80vh; /* manja visina hero sekcije */
+        padding-top: 6rem; /* pomeri sadržaj ispod navigacije */
     }
 
     .video-container {
@@ -204,7 +206,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 80vh;
+        height: 80vh; /* manja visina video pozadine */
         overflow: hidden;
         z-index: -2;
     }
