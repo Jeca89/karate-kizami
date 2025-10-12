@@ -191,11 +191,15 @@
 
        @media (max-width: 768px) {
     .video-container {
-        position: relative;  /* da ne preseče sadržaj */
-        height: 60vh;        /* odgovarajuća visina na mobilnim */
+        position: absolute;  /* da ne preseče sadržaj */
+        top: 0;
+        left: 0;
+        height: 70vh;        /* odgovarajuća visina na mobilnim */
         width: 100%;
         max-width: 100%;
-        box-sizing: border-box;
+        object-fit: cover;
+        object-position: center center;
+        z-index: -2;
         overflow: hidden;
     }
 }
