@@ -1497,6 +1497,23 @@ body {
   }
 }
         
+/* 🔧 HERO VIDEO – OPTIMALNO ZA MOBILNI */
+@media (max-width: 768px) {
+  .background-video {
+    object-fit: contain; /* umesto cover — da se ceo vidi */
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .hero {
+    height: auto; /* prilagodi visinu videu */
+    padding-top: 6rem;
+  }
+}
+        
 /* === GLOBALNI SCROLL FIX === */
         
 html, body {
