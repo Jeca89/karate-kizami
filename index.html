@@ -1448,38 +1448,29 @@ body {
     }
 }
 /* HERO VIDEO FIX – ceo video vidljiv na mobilnom */
-@media (max-width: 768px) {
-  .background-video {
-    width: 100%;
-    height: auto;           /* zadrži proporcije videa */
-    object-fit: contain;    /* prikaži ceo video bez sečenja */
-    object-position: center;
-    display: block;
-    background-color: black; /* ako ostanu prazne trake gore/dole */
-  }
 
+        @media (max-width: 768px) {
   .video-container {
-    width: 100%;
-    height: auto;
+    position: relative;
+    width: 100vw;
+    height: 60vh; /* video zauzima 60% visine ekrana – možeš menjati */
     overflow: hidden;
   }
 
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* da se lepo popuni, ali ne iseče previše */
+    object-position: center center;
+    display: block;
+  }
+
   .hero {
-    height: auto;          /* prilagođava se visini videa */
-    padding-top: 6rem;     /* da tekst ne upadne ispod navigacije */
+    height: auto;
+    padding-top: 6rem;
     padding-bottom: 2rem;
   }
 }
-        
-/* === GLOBALNI SCROLL FIX === */
-        
-html, body {
-  width: 100%;
-  overflow-x: hidden; /* sprečava pomeranje udesno */
-  margin: 0;
-  padding: 0;
-}
-        
 
         
     </style>
