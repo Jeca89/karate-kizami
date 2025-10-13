@@ -1447,24 +1447,53 @@ body {
         margin-left: 0 !important;
     }
 }
+/* ✅ HERO VIDEO FIX – jednostavno i tačno */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 5rem 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ✅ Mobilni prikaz */
 @media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    padding-top: 6rem; /* da ne ide pod navigaciju */
+  }
+
   .video-container {
     width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
+    height: 100%;
   }
 
   .background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* popuni ekran bez belih ivica */
     object-position: center center;
-  }
-
-  .hero {
-    height: auto;
-    padding-top: 6rem;
   }
 }
         
